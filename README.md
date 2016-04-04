@@ -1,1 +1,1 @@
-# http2https
+# http2https## 简介访问google.com的时候，在国内会重连接至:`http://google.com.hk`,　这样就无法访问，但是修改为`https://google.com.hk`就可以。因此就写了非常简单的chrome的扩展程序，访问google时候，强制转为`https`的加密链接。## 使用因为没有发布到商店，因此直接打包下载之后，在chrome浏览器的扩展程序里面的，使用加载已解压扩展程序，选择程序根目录即可。## 实现主要是利用`chrome.tabs.onUpdated`事件，检测到是访问`google.com.hk`,便使用`chrome.tabs.update`来重定向。具体实现看源码即可。## 参考- [官方文档](https://developer.chrome.com/extensions/tabs)- [Jophy](http://www.ijophy.com/)
