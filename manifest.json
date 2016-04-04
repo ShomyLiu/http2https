@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "http2https",
+  "description": "visit google with https",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background":{
+    "page":"runjs.html"
+  },
+  "permissions":[
+      "tabs"
+  ]
+}
