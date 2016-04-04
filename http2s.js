@@ -2,7 +2,7 @@
 var urlHistoryMap = [];
 
 chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
-  if(!/http:\/\/.*?google(dservices)?.com/.test(tab.url)) return;
+  if(!/http:\/\/.*?google(adservices)?.com/.test(tab.url)) return;
 	if(info.status == "loading") {
     var preUrl = urlHistoryMap[tabId];
     if(null == preUrl || preUrl != tab.url){
